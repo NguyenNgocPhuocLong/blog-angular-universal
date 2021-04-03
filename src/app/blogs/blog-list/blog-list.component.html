@@ -1,0 +1,6 @@
+<p>blog-list works!</p>
+
+<article class="article-single" [attr.data-post-id]="post.id" *ngFor="let post of postList$ | async">
+    <h2 class="post-title"><a [routerLink]="[post.id]">{{post.title}}</a> </h2>
+    <p>{{post.body}}</p>
+</article>
