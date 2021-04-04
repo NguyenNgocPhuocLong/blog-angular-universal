@@ -12,7 +12,9 @@
     "dev:ssr": "ng run blog-angular:serve-ssr",
     "serve:ssr": "node dist/blog-angular/server/main.js",
     "build:ssr": "ng build --prod && ng run blog-angular:server:production",
-    "prerender": "ng run blog-angular:prerender"
+    "prerender": "ng run blog-angular:prerender",
+    "start:heroku":"node dist/server",
+    "postinstall":"npm run build:ssr" 
   },
   "private": true,
   "dependencies": {
